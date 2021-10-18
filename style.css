@@ -20,10 +20,6 @@
   }
 }
 
-/* .hair-type-image__row { */
-/* background-color: orange; */
-/* font-size: 0; */
-/* } */
 .hair-type-image__title {
   /* background-color: green; */
   display: inline-block;
@@ -54,6 +50,7 @@
 @media screen and (max-width: 850px) {
   .hair-type-image__cell {
     margin-left: 0.5em;
+    margin-right: 0;
     width: 80px;
   }
 }
