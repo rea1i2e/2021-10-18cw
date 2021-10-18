@@ -1,7 +1,5 @@
-@charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .hair-type-image {
@@ -10,30 +8,23 @@
 }
 
 .hair-type-image__wpapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .hair-type-image__wpapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 }
 
 /* .hair-type-image__row { */
-/* background-color: orange; */
-/* font-size: 0; */
+  /* background-color: orange; */
+  /* font-size: 0; */
 /* } */
+
 .hair-type-image__title {
   /* background-color: green; */
   display: inline-block;
-  line-height: calc( 50px - 0.5em);
+  line-height: calc( 50px - 0.5em) ;
   width: 100px;
-  height: calc( 50px - 0.5em);
+  height: calc( 50px - 0.5em) ;
   text-align: center;
 }
 
@@ -43,29 +34,25 @@
   display: inline-block;
   margin-left: 1em;
   width: 100px;
-  height: calc( 50px - 0.5em);
-  line-height: calc( 50px - 0.5em);
+  height: calc( 50px - 0.5em) ;
+  line-height: calc( 50px - 0.5em) ;
   text-align: center;
   margin-bottom: 1em;
 }
 
 .hair-type-image__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
 
 .hair-type-image__row--m0 {
+  // background-color: green;
   margin-bottom: 0;
 }
 
 .hair-type-image__shapge-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 350px;
 }
 
@@ -79,17 +66,16 @@
 .hair-type-image__shape {
   width: 100px;
   height: 100px;
-  color: black;
+  color:black;
 }
 
 .hair-type-image__shape1::after {
   content: "";
   display: block;
-  position: absolute;
+	position: absolute;
   bottom: 1em;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+    transform: translateX(-50%);
   width: 40%;
   height: 40%;
   border: 2px solid #EDECE7;
@@ -99,11 +85,10 @@
 .hair-type-image__shape2::after {
   content: "";
   display: block;
-  position: absolute;
-  bottom: 0.8em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+	position: absolute;
+    bottom: 0.8em;
+    left: 50%;
+    transform: translateX(-50%);
   width: 30%;
   height: 50%;
   border: 2px solid #EDECE7;
@@ -113,11 +98,10 @@
 .hair-type-image__shape3::after {
   content: "";
   display: block;
-  position: absolute;
-  bottom: 1em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+	position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
   width: 40%;
   height: 40%;
   border: 2px solid #EDECE7;
@@ -126,29 +110,27 @@
 .hair-type-image__shape4::after {
   content: "▽";
   display: block;
-  position: absolute;
+	position: absolute;
   bottom: 0.3em;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   color: #EDECE7;
   font-size: 48px;
 }
 
 .hair-type-image__shape5::after {
   content: '';
-  display: block;
-  /*忘れずに！*/
-  width: 60%;
-  /*画像の幅*/
-  height: 60%;
-  /*画像の高さ*/
+  display: block;/*忘れずに！*/
+  width: 60%;/*画像の幅*/
+  height: 60%;/*画像の高さ*/
   background-image: url(pentagon.svg);
   background-size: contain;
   position: absolute;
   bottom: 0.5em;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
+
 }
-/*# sourceMappingURL=style.css.map */
+
+
+
