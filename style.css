@@ -1,11 +1,7 @@
 @charset "UTF-8";
-* {
+.hair-type-image {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.hair-type-image {
-  /* background-color: yellow; */
   font-size: 13px;
 }
 
@@ -37,6 +33,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 850px) {
+  .hair-type-image__title {
+    width: 50px;
+  }
+}
+
 .hair-type-image__cell {
   background-color: #eee;
   color: #999;
@@ -47,6 +49,13 @@
   line-height: calc( 50px - 0.5em);
   text-align: center;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 850px) {
+  .hair-type-image__cell {
+    margin-left: 0.5em;
+    width: 80px;
+  }
 }
 
 .hair-type-image__row {
@@ -66,7 +75,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 350px;
+  width: 320px;
 }
 
 .hair-type-image__cell--squares {
@@ -155,7 +164,7 @@
           transform: translateX(-50%);
 }
 
-#change-color {
+.change-color {
   background-color: #CD4465;
   color: #fff;
 }

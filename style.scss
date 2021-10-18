@@ -1,9 +1,8 @@
 * {
-  box-sizing: border-box;
 }
 
 .hair-type-image {
-  /* background-color: yellow; */
+  box-sizing: border-box;
   font-size: 13px;
 }
 
@@ -26,6 +25,9 @@
   width: 100px;
   height: calc( 50px - 0.5em) ;
   text-align: center;
+  @media screen and (max-width: 850px) {
+    width: 50px;
+  }
 }
 
 .hair-type-image__cell {
@@ -38,6 +40,10 @@
   line-height: calc( 50px - 0.5em) ;
   text-align: center;
   margin-bottom: 1em;
+  @media screen and (max-width: 850px) {
+    margin-left: 0.5em;
+    width: 80px;
+  }
 }
 
 .hair-type-image__row {
@@ -53,7 +59,7 @@
 .hair-type-image__shapge-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 350px;
+  width: 320px;
 }
 
 .hair-type-image__cell--squares {
@@ -134,7 +140,7 @@
   transform: translateX(-50%);
 }
 
-#change-color {
+.change-color {
   background-color: #CD4465;
   color: #fff;
 }
