@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.hair-type-image {
+  /* background-color: yellow; */
+  font-size: 13px;
+}
+
+.hair-type-image__wpapper {
+  display: flex;
+}
+
+/* .hair-type-image__row { */
+  /* background-color: orange; */
+  /* font-size: 0; */
+/* } */
+
+.hair-type-image__title {
+  /* background-color: green; */
+  display: inline-block;
+  line-height: calc( 50px - 0.5em) ;
+  width: 100px;
+  height: calc( 50px - 0.5em) ;
+  text-align: center;
+}
+
+.hair-type-image__cell {
+  background-color: #CD4465;
+  color: #fff;
+  display: inline-block;
+  margin-left: 1em;
+  width: 100px;
+  height: calc( 50px - 0.5em) ;
+  line-height: calc( 50px - 0.5em) ;
+  text-align: center;
+}
+
+.hair-type-image__row {
+  display: flex;
+}
+
+.hair-type-image__shapge-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.hair-type-image__cell--squares {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.hair-type-image__shape {
+  width: 100px;
+  height: 100px;
+  color:black;
+}
+
+.hair-type-image__shape1::after {
+  content: "";
+  display: block;
+	position: absolute;
+  bottom: 1em;
+  left: 50%;
+    transform: translateX(-50%);
+  width: 40%;
+  height: 40%;
+  border: 2px solid #EDECE7;
+  border-radius: 50%;
+}
+
+.hair-type-image__shape2::after {
+  content: "";
+  display: block;
+	position: absolute;
+    bottom: 0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+  width: 30%;
+  height: 50%;
+  border: 2px solid #EDECE7;
+  border-radius: 50%;
+}
+
+.hair-type-image__shape3::after {
+  content: "";
+  display: block;
+	position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+  width: 40%;
+  height: 40%;
+  border: 2px solid #EDECE7;
+}
+
+.hair-type-image__shape4::after {
+  content: "▽";
+  display: block;
+	position: absolute;
+  bottom: 0.3em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #EDECE7;
+  font-size: 48px;
+}
+
+.hair-type-image__shape5::after {
+  content: '';
+  display: block;/*忘れずに！*/
+  width: 60%;/*画像の幅*/
+  height: 60%;/*画像の高さ*/
+  background-image: url(pentagon.svg);
+  background-size: contain;
+  position: absolute;
+  bottom: 0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+
