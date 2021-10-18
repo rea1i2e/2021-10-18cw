@@ -242,7 +242,7 @@ var FOOBOX = window.FOOBOX = {
   
 <!-- ここから追加css**********************************************　 -->
   <style type="text/css">
-    @charset "UTF-8";
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -259,7 +259,7 @@ var FOOBOX = window.FOOBOX = {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .hair-type-image__wpapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -282,8 +282,8 @@ var FOOBOX = window.FOOBOX = {
 }
 
 .hair-type-image__cell {
-  background-color: #CD4465;
-  color: #fff;
+  background-color: #eee;
+  color: #999;
   display: inline-block;
   margin-left: 1em;
   width: 100px;
@@ -318,6 +318,9 @@ var FOOBOX = window.FOOBOX = {
   height: 100px;
   position: relative;
   margin-bottom: 1em;
+  background-color: #fff;
+  border: 1px solid #EDECE7;
+  color: #000;
 }
 
 .hair-type-image__shape {
@@ -395,6 +398,11 @@ var FOOBOX = window.FOOBOX = {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+.change-color {
+  background-color: #CD4465;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
     /* * { outline:2px solid red; } */
   </style>
@@ -406,26 +414,26 @@ var FOOBOX = window.FOOBOX = {
     <div class="hair-type-image__container1">
       <dl class="hair-type-image__row">
         <dt class="hair-type-image__title">髪量</dt>
-        <dd class="hair-type-image__cell">少ない</dd>
-        <dd class="hair-type-image__cell">普通</dd>
-        <dd class="hair-type-image__cell">多い</dd>
+        <dd class="hair-type-image__cell change-color">少ない</dd>
+        <dd class="hair-type-image__cell change-color">普通</dd>
+        <dd class="hair-type-image__cell change-color">多い</dd>
       </dl>
       <dl class="hair-type-image__row">
         <dt class="hair-type-image__title">髪質</dt>
-        <dd class="hair-type-image__cell">柔かい</dd>
-        <dd class="hair-type-image__cell">普通</dd>
+        <dd class="hair-type-image__cell change-color">柔かい</dd>
+        <dd class="hair-type-image__cell change-color">普通</dd>
         <dd class="hair-type-image__cell">硬い</dd>
       </dl>
       <dl class="hair-type-image__row">
         <dt class="hair-type-image__title">太さ</dt>
-        <dd class="hair-type-image__cell">少ない</dd>
-        <dd class="hair-type-image__cell">普通</dd>
-        <dd class="hair-type-image__cell">太い</dd>
+        <dd class="hair-type-image__cell change-color">細い</dd>
+        <dd class="hair-type-image__cell change-color">普通</dd>
+        <dd class="hair-type-image__cell change-color">太い</dd>
       </dl>
       <dl class="hair-type-image__row hair-type-image__row--m0">
         <dt class="hair-type-image__title">クセ</dt>
-        <dd class="hair-type-image__cell">なし</dd>
-        <dd class="hair-type-image__cell">少し</dd>
+        <dd class="hair-type-image__cell change-color">なし</dd>
+        <dd class="hair-type-image__cell change-color">少し</dd>
         <dd class="hair-type-image__cell">強い</dd>
       </dl>
     </div><!-- /.hair-type-image__container1 -->
@@ -434,7 +442,7 @@ var FOOBOX = window.FOOBOX = {
       <dl class="hair-type-image__row">
         <dt class="hair-type-image__title">顔型</dt>
         <div class="hair-type-image__shapge-wrapper">
-          <dd class="hair-type-image__cell hair-type-image__cell--squares">
+          <dd class="hair-type-image__cell hair-type-image__cell--squares change-color">
             <span class="hair-type-image__shape hair-type-image__shape1">丸型</span>
           </dd>
           <dd class="hair-type-image__cell hair-type-image__cell--squares">
@@ -454,7 +462,6 @@ var FOOBOX = window.FOOBOX = {
     </div><!-- /.hair-type-image__container1 -->
   </div>      
 </div>
-
 <!-- ここまで追加HTML -->
 
 </div></div></div></div></div>	</div><!-- .entry-content -->

@@ -15,7 +15,7 @@
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .hair-type-image__wpapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -38,8 +38,8 @@
 }
 
 .hair-type-image__cell {
-  background-color: #CD4465;
-  color: #fff;
+  background-color: #eee;
+  color: #999;
   display: inline-block;
   margin-left: 1em;
   width: 100px;
@@ -74,6 +74,9 @@
   height: 100px;
   position: relative;
   margin-bottom: 1em;
+  background-color: #fff;
+  border: 1px solid #EDECE7;
+  color: #000;
 }
 
 .hair-type-image__shape {
@@ -150,5 +153,10 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.change-color {
+  background-color: #CD4465;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
