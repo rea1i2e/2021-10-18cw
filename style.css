@@ -155,7 +155,7 @@
           transform: translateX(-50%);
 }
 
-.change-color {
+#change-color {
   background-color: #CD4465;
   color: #fff;
 }
