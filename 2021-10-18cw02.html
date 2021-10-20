@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021-10-18cw02</title>
+</head>
+<body>
+  <!-- ここから追加css**********************************************　 -->
+<style type="text/css">
+  .hair-type-image {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 13px;
+  }
+  
+  .hair-type-image__wpapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .hair-type-image__wpapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  .hair-type-image__title {
+    /* background-color: green; */
+    display: inline-block;
+    line-height: calc( 50px - 0.5em);
+    width: 100px;
+    height: calc( 50px - 0.5em);
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .hair-type-image__title {
+      width: 50px;
+    }
+  }
+  
+  .hair-type-image__cell {
+    background-color: #eee;
+    color: #999;
+    display: inline-block;
+    margin-left: 1em;
+    width: 100px;
+    height: calc( 50px - 0.5em);
+    line-height: calc( 50px - 0.5em);
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .hair-type-image__cell {
+      margin-left: 0.5em;
+      margin-right: 0;
+      width: 80px;
+    }
+  }
+  
+  .hair-type-image__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  
+  .hair-type-image__row--m0 {
+    margin-bottom: 0;
+  }
+  
+  .hair-type-image__shapge-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 320px;
+  }
+  
+  .hair-type-image__cell--squares {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 1em;
+    background-color: #fff;
+    border: 1px solid #EDECE7;
+    color: #000;
+  }
+  
+  .hair-type-image__shape {
+    width: 100px;
+    height: 100px;
+    color: black;
+  }
+  
+  .hair-type-image__shape1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 40%;
+    height: 40%;
+    border: 2px solid #EDECE7;
+    border-radius: 50%;
+  }
+  
+  .hair-type-image__shape2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0.8em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 30%;
+    height: 50%;
+    border: 2px solid #EDECE7;
+    border-radius: 50%;
+  }
+  
+  .hair-type-image__shape3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 40%;
+    height: 40%;
+    border: 2px solid #EDECE7;
+  }
+  
+  .hair-type-image__shape4::after {
+    content: "▽";
+    display: block;
+    position: absolute;
+    bottom: 0.3em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #EDECE7;
+    font-size: 48px;
+  }
+  
+  .hair-type-image__shape5::after {
+    content: '';
+    display: block;
+    /*忘れずに！*/
+    width: 60%;
+    /*画像の幅*/
+    height: 60%;
+    /*画像の高さ*/
+    background-image: url(pentagon.svg);
+    background-size: contain;
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .change-color {
+    background-color: #CD4465;
+    color: #fff;
+  }
+  /* * { outline:2px solid red; } */
+    </style>
+  <!-- ここまで追加CSS*************************** -->
+  
+  <!-- ここから追加HTML***************************************************************** -->
+  <div class="hair-type-image">
+    <div class="hair-type-image__wpapper">
+      <div class="hair-type-image__container1">
+        <dl class="hair-type-image__row">
+          <dt class="hair-type-image__title">髪量</dt>
+          <dd class="hair-type-image__cell change-color">少ない</dd>
+          <dd class="hair-type-image__cell change-color">普通</dd>
+          <dd class="hair-type-image__cell change-color">多い</dd>
+        </dl>
+        <dl class="hair-type-image__row">
+          <dt class="hair-type-image__title">髪質</dt>
+          <dd class="hair-type-image__cell change-color">柔かい</dd>
+          <dd class="hair-type-image__cell change-color">普通</dd>
+          <dd class="hair-type-image__cell">硬い</dd>
+        </dl>
+        <dl class="hair-type-image__row">
+          <dt class="hair-type-image__title">太さ</dt>
+          <dd class="hair-type-image__cell change-color">細い</dd>
+          <dd class="hair-type-image__cell change-color">普通</dd>
+          <dd class="hair-type-image__cell change-color">太い</dd>
+        </dl>
+        <dl class="hair-type-image__row hair-type-image__row--m0">
+          <dt class="hair-type-image__title">クセ</dt>
+          <dd class="hair-type-image__cell change-color">なし</dd>
+          <dd class="hair-type-image__cell change-color">少し</dd>
+          <dd class="hair-type-image__cell">強い</dd>
+        </dl>
+      </div><!-- /.hair-type-image__container1 -->
+  
+      <div class="hair-type-image__container2">
+        <dl class="hair-type-image__row">
+          <dt class="hair-type-image__title">顔型</dt>
+          <div class="hair-type-image__shapge-wrapper">
+            <dd class="hair-type-image__cell hair-type-image__cell--squares change-color">
+              <span class="hair-type-image__shape hair-type-image__shape1  change-color">丸型</span>
+            </dd>
+            <dd class="hair-type-image__cell hair-type-image__cell--squares">
+              <span class="hair-type-image__shape hair-type-image__shape2">卵型</span>
+            </dd>
+            <dd class="hair-type-image__cell hair-type-image__cell--squares">
+              <span class="hair-type-image__shape hair-type-image__shape3">四角</span>
+            </dd>
+            <dd class="hair-type-image__cell hair-type-image__cell--squares">
+              <span class="hair-type-image__shape hair-type-image__shape4">逆三角</span>
+            </dd>
+            <dd class="hair-type-image__cell hair-type-image__cell--squares">
+              <span class="hair-type-image__shape hair-type-image__shape5">ベース</span>
+            </dd>
+          </div><!-- /.hair-type-image__shapge-wrapper -->
+        </dl>
+      </div><!-- /.hair-type-image__container1 -->
+    </div>      
+  </div>
+  <!-- ここまで追加HTML -->
+  
+  
+</body>
+</html>
